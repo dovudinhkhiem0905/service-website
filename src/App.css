@@ -1,38 +1,88 @@
-.App {
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f1ea; /* Soft beige background */
+  color: #333;
+}
+
+/* Container for layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header styling */
+header {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.5rem;
+  color: #4e342e; /* Earthy brown */
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation menu styling */
+.nav {
+  list-style-type: none;
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav li {
+  margin: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav a {
+  text-decoration: none;
+  color: #6d4c41; /* Earthy brown for links */
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  border: 1px solid #8d6e63; /* Hover with a darker shade */
+  background-color: #e0d9d4; /* Light beige hover effect */
+}
+
+/* Service section */
+.service {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+  font-size: 1.8rem;
+  color: #4e342e; /* Earthy brown for headings */
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #6d4c41; /* Lighter brown for text */
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #8d6e63;
 }
